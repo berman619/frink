@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/frink/static/css/main.52383a39.css",
+    "main.js": "/frink/static/js/main.284e4c3f.js",
+    "static/js/453.8bf3bb34.chunk.js": "/frink/static/js/453.8bf3bb34.chunk.js",
+    "index.html": "/frink/index.html",
+    "main.52383a39.css.map": "/frink/static/css/main.52383a39.css.map",
+    "main.284e4c3f.js.map": "/frink/static/js/main.284e4c3f.js.map",
+    "453.8bf3bb34.chunk.js.map": "/frink/static/js/453.8bf3bb34.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52383a39.css",
+    "static/js/main.284e4c3f.js"
+  ]
+}
