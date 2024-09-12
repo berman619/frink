@@ -1,0 +1,59 @@
+/* Services.css */
+.services {
+  padding: 50px 20px;
+  background-color: #f0f8ff; /* Alice Blue */
+  text-align: center;
+}
+
+.services h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  color: #4b0082; /* Indigo */
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: linear-gradient(135deg, #f0f8ff, #dcd6f7);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  width: 280px;
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: #4b0082; /* Indigo */
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.service-card svg {
+  color: #4b0082; /* Indigo */
+  margin-bottom: 20px;
+}

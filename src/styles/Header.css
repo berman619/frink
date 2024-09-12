@@ -1,0 +1,131 @@
+/* Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, rgba(75, 0, 130, 0.8), rgba(106, 13, 173, 0.8));
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+/* When the user scrolls down 50px, this class is applied */
+.header.scrolled {
+  background: #4b0082;  /* Darker background */
+  padding: 5px 0;  /* Smaller padding to make the header shrink */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow when scrolled */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.header h1 span {
+  color: #c0c6ee; /* Highlighted color */
+}
+
+.header h1:hover {
+  transform: scale(1.05);
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #add8e6; /* Light Blue */
+  transition: width 0.3s ease;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #add8e6; /* Light Blue */
+}
+
+.header nav a:hover {
+  color: #add8e6; /* Light Blue */
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .header nav.open {
+    display: flex;
+  }
+
+  .header nav a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .header nav a:hover::after {
+    width: 0;
+  }
+
+  .header nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer {
+  background-color: #4b0082; /* Indigo */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer .social-links {
+  margin-bottom: 10px;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.footer .social-links a:hover {
+  color: #add8e6; /* Light Blue */
+}
